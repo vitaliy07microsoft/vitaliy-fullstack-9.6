@@ -1,0 +1,47 @@
+@use "sass:color";
+
+// colors
+$white: #ffffff;
+$eaeaea: #eaeaea;
+$basicBGC: #f8f8f8;
+$infoLineC: #41f6d7;
+$basicGray: #7e7e82;
+$infoTypeCheckedC: #b8ffec;
+$basicBlack: #1B1C21;
+$black: #000000;
+$asideShadow: 10px 0px 15px rgb(199, 197, 197);
+$textShadow: 0px 0px 5px rgb(150, 148, 148);
+$swiperPBC: #b8b7b7;
+$topGradient: linear-gradient(45deg, #f8f8f8, #ffffff);
+$topLineC: #d9fff5;
+
+//fonts
+$base-font: "TT lakes", sans-serif;
+
+// basicCode
+$border-radius: 6px;
+$margin-1rem: 1rem;
+$margin-2rem: 2rem;
+
+//mixins
+@mixin flex-center {
+    display: center;
+    justify-content: center;
+    align-items: center;
+}
+@mixin swiper-slide-size {
+    width: 240px;
+    height: 72px;
+}
+@mixin swiper-slide-style {
+    @include flex-center;
+    @include swiper-slide-size;
+    border-radius: $border-radius;
+    background-color: $primary-swiperBG;
+    border: $primary-swiperBorder;
+}
+$
+$
+$
+$
+$
