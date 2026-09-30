@@ -33,3 +33,20 @@ techMediaQuery.addEventListener("change", (e) => {
     techSwiper.slideTo(0, 0);
   }
 });
+
+//price
+const priceSwiper = new Swiper(".main__price--swiper", {
+  width: 240,
+  pagination: {
+    el: ".price-swiper-pagination",
+    clickable: true,
+  },
+});
+
+const priceMediaQuery = window.matchMedia("(max-width: 767px)");
+
+brandsMediaQuery.addEventListener("change", (e) => {
+  if (!e.matches) {
+    priceSwiper.slideTo(0, 0);
+  }
+});
