@@ -7,10 +7,255 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>вёрстка 9 главы</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
+
+
   <body>
-    <img src="./img/webpack.svg" alt="Webpack Logo" width="200px" />
-    <h3>Welcome to Webpack 5 starter </h3>
+    <header class="header">
+        <section class="header__buttons--left">
+            <img class="header__buttons--left--burger" src="./img/burger.png"  alt="img__burger--icon"/>
+
+            <div class="header__buttons--betweenLine--left"></div>
+
+            <img class="header__buttons--left--cps" src="./img/Group.svg" alt="img__group--icon"/>
+        </section>
+        
+
+        <section class="header__buttons--right">
+            <img class="header__buttons--rightt--call" src="./img/call.svg" alt="img__call-icon">
+            <img class="header__buttons--right--chat" src="./img/chat.svg" alt="img__chat-icon">
+            <img class="header__buttons--right--profile" src="./img/profile.svg" alt="img__profile-icon">
+
+            <div class="header__buttons--betweenLine--right"></div>
+
+            <img class="header__buttons--right--repair" src="./img/repair.svg" alt="img__repair-icon"/>
+            <img class="header__buttons--right--checkstatus" src="./img/checkstatus.svg" alt="img__checkstatus-icon"/>
+        </section>
+    </header>
+
+
+
+
+    <main class="main">
+        <section main__top>
+            <section class="main__top--name">
+              <div class="main__top--name--line"></div>
+              <h2 class="main__top--name--text">Услуги и сервисы</h2>
+            </section>
+
+            <section class="main__top--right">
+              <div class="main__top--right--text1">Оставить заявку</div>
+              <img class="main__top--right--button--repair" src="./img/repair.svg">
+              <div class="main__top--right--text2">Статус ремонта</div>
+              <img class="main__top--right--button--checkstatus" src="./img/checkstatus.svg">
+            </section>
+
+            <section class="main__info">
+              <div id="main__info--first" class="main__info--all">Ремонтируемые бренды</div>
+              <div id="main__info--first" class="main__info--all">Ремонтируемые устройства</div>
+              <div id="main__info--first" class="main__info--all">Дополнительные услуги</div>
+              <div id="main__info--first" class="main__info--all">Цены на услуги</div>
+              <div id="main__info--first" class="main__info--all">Адреса сервисных центров</div>
+              <div id="main__info--first" class="main__info--all">Специальные цены</div>
+            </section>
+        </section>
+
+
+        <section class="main__content">
+            <div class="main__content--text">
+              <span class="mian__content--text--first">
+                Мы являемся профессиональным сервисным центром по ремонту техники
+                Deil. Только у нас вы можете отремонтировать свой ноутбук Deil с
+                официальной гарантией производителя.
+              </span>
+
+              <span class="mian__content--text--second">
+                Мы успешно работаем с 1992 года и заслужили репутацию надёжного партнёра<span class="main__content--text--second--comma">,</span>
+              </span>
+
+              <span class="mian__content--text--third">
+                что подтверждает большое количество постоянных клиентов. Мы
+                гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                очередь, советуют нас родным и близким.
+              </span>
+            </div>
+
+            <div class="main__content--readMore">
+              <img src="./img/expand.png" alt="img__expand-icon">
+              <div class="main__content--readMore--font">Читать дальше</div>
+            </div>
+
+            <div class="main__content--img">
+              <img class="main__content--hero" src="./img/_MG_3223.png" alt="hero__img"/>
+            </div>
+        </section>
+
+
+        <section class="main__brands">
+
+          <sectiom class="main__brands--top">
+            <div class="main__brands--top--line"></div>
+
+            <div class="main__brands--top--title">
+              РЕМОНТ РАЗЛИЧНЫХ БРЕНДОВ
+            </div>
+          </sectiom>
+
+          <section main__brands--icons>
+            <div class="main__brands--swiper">
+
+              <div class="mian__brands--swiper-wrapper">
+
+                <div class="brands-swiper-slide brands-swiper-slide-hidden" id="brands-swiper-slide-1">
+                  <img src="./img/Bitmap.png" alt="lenovo-img" class="brands-swiper-slide-img">
+                  <img src="img/go.png" alt="go-png" class="brands-swiper-slide-go">
+                </div>
+                <div class="brands-swiper-slide brands-swiper-slide-hidden" id="brands-swiper-slide-2">
+                  <img src="./img/Bitmap (1).png" alt="samsung-img" class="brands-swiper-slide-img">
+                  <img src="img/go.png" alt="go-png" class="brands-swiper-slide-go">
+                </div>
+                <div class="brands-swiper-slide brands-swiper-slide-hidden" id="brands-swiper-slide-3">
+                  <img src="./img/Bitmap (2).png" alt="apple-img" class="brands-swiper-slide-img">
+                  <img src="img/go.png" alt="go-png" class="brands-swiper-slide-go">
+                </div>
+                <div class="brands-swiper-slide brands-swiper-slide-hidden" id="brands-swiper-slide-4">
+                  <img src="./img/Bitmap (3).png" alt="viewsonic-img" class="brands-swiper-slide-img">
+                  <img src="img/go.png" alt="go-png" class="brands-swiper-slide-go">
+                </div>
+                <div class="brands-swiper-slide brands-swiper-slide-hidden" id="brands-swiper-slide-5">
+                  <img src="./img/Bitmap (4).png" alt="bosch-img" class="brands-swiper-slide-img">
+                  <img src="img/go.png" alt="go-png" class="brands-swiper-slide-go">
+                </div>
+                <div class="brands-swiper-slide brands-swiper-slide-hidden" id="brands-swiper-slide-6">
+                  <img src="./img/Bitmap (5).png" alt="hp-img" class="brands-swiper-slide-img">
+                  <img src="img/go.png" alt="go-png" class="brands-swiper-slide-go">
+                </div>
+                <div class="brands-swiper-slide brands-swiper-slide-hidden" id="brands-swiper-slide-7">
+                  <img src="./img/Bitmap (6).png" alt="acer-img" class="brands-swiper-slide-img">
+                  <img src="img/go.png" alt="go-png" class="brands-swiper-slide-go">
+                </div>
+                <div class="brands-swiper-slide brands-swiper-slide-hidden" id="brands-swiper-slide-8">
+                  <img src="./img/Bitmap (7).png" alt="sony-img" class="brands-swiper-slide-img">
+                  <img src="img/go.png" alt="go-png" class="brands-swiper-slide-go">
+                </div>
+                <div class="brands-swiper-slide brands-swiper-slide-hidden" id="brands-swiper-slide-9">
+                  <img src="./img/Bitmap.png" alt="lenovo-img2" class="brands-swiper-slide-img">
+                  <img src="img/go.png" alt="go-png" class="brands-swiper-slide-go">
+                </div>
+                <div class="brands-swiper-slide brands-swiper-slide-hidden" id="brands-swiper-slide-10">
+                  <img src="./img/Bitmap (1).png" alt="samsung-img2" class="brands-swiper-slide-img">
+                  <img src="img/go.png" alt="go-png" class="brands-swiper-slide-go">
+                </div>
+                <div class="brands-swiper-slide brands-swiper-slide-hidden" id="brands-swiper-slide-11">
+                  <img src="./img/Bitmap (2).png" alt="apple-img2" class="brands-swiper-slide-img">
+                  <img src="img/go.png" alt="go-png" class="brands-swiper-slide-go">
+                </div>
+
+
+              </div>
+
+              <div class="brands-swiper-pagination"></div>
+
+            </div>
+
+            <section class="main__brands--show--more">
+              <button class="main__brands--show--more--button" onclick="showMore()">
+                <img src="./img/expand.png" alt="expand-img" class="mian__brands--show--more--button--img">
+                <div class="bottom__button--text">Показать всё</div>
+              </button>
+            </section>
+          </section>
+
+      </section>
+
+
+      <section main__tech>
+          <sectiom class="main__tech--top">
+            <div class="main__tech--top--line"></div>
+
+            <div class="main__tech--top--title">
+              РЕМОНТ РАЗЛИЧНЫХ БРЕНДОВ
+            </div>
+          </sectiom>
+
+          <section class="main__tech--icons">
+            <div class="mian__tech--swiper">
+            
+              <div class="main__tech--swiper-wrapper">
+
+                <div class="tech-swiper-slide tech-swiper-slide-hidden" id="tech-swiper-slide-1">
+                  <img src="img/go.png" alt="go-png" class="tech-swiper-slide-go">
+                </div>
+                <div class="tech-swiper-slide tech-swiper-slide-hidden" id="tech-swiper-slide-2">
+                  <img src="img/go.png" alt="go-png" class="tech-swiper-slide-go">
+                </div>
+                <div class="tech-swiper-slide tech-swiper-slide-hidden" id="tech-swiper-slide-3">
+                  <img src="img/go.png" alt="go-png" class="tech-swiper-slide-go">
+                </div>
+                <div class="tech-swiper-slide tech-swiper-slide-hidden" id="tech-swiper-slide-4">
+                  <img src="img/go.png" alt="go-png" class="tech-swiper-slide-go">
+                </div>
+                <div class="tech-swiper-slide tech-swiper-slide-hidden" id="tech-swiper-slide-5">
+                  <img src="img/go.png" alt="go-png" class="tech-swiper-slide-go">
+                </div>
+                <div class="tech-swiper-slide tech-swiper-slide-hidden" id="tech-swiper-slide-6">
+                  <img src="img/go.png" alt="go-png" class="tech-swiper-slide-go">
+                </div>
+                <div class="tech-swiper-slide tech-swiper-slide-hidden" id="tech-swiper-slide-7">
+                  <img src="img/go.png" alt="go-png" class="tech-swiper-slide-go">
+                </div>
+                <div class="tech-swiper-slide tech-swiper-slide-hidden" id="tech-swiper-slide-8">
+                  <img src="img/go.png" alt="go-png" class="tech-swiper-slide-go">
+                </div>
+                <div class="tech-swiper-slide tech-swiper-slide-hidden" id="tech-swiper-slide-9">
+                  <img src="img/go.png" alt="go-png" class="tech-swiper-slide-go">
+                </div>
+                <div class="tech-swiper-slide tech-swiper-slide-hidden" id="tech-swiper-slide-10">
+                  <img src="img/go.png" alt="go-png" class="tech-swiper-slide-go">
+                </div>
+                <div class="tech-swiper-slide tech-swiper-slide-hidden" id="tech-swiper-slide-11">
+                  <img src="img/go.png" alt="go-png" class="tech-swiper-slide-go">
+                </div>
+
+              </div>
+
+              <div class="tech-swiper-pagination"></div>
+
+            </div>
+
+            <section class="main__tech--show--more">
+              <button class="main__tech--show--more--button" onclick="showMore()">
+                <img src="./img/expand.png" alt="expand-img" class="mian__tech--show--more--button--img">
+                <div class="main__tech--show--more--button--text">Показать всё</div>
+              </button>
+            </section>
+          </section>
+        
+          
+      </section>
+    </main>
+
+
+
+
+    <aside>
+
+    </aside>
+
+
+
+
+    <footer>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>

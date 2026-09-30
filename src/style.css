@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "TT lakes";
+  src: url(../fonts/TTLakes-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "TT lakes", sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */
