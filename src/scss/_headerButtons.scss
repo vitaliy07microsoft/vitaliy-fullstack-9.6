@@ -62,4 +62,8 @@ body {
         @include header-buttons;
     }
 }
-@media (min-width: 1120px) {}
+@media (min-width: 1120px) {
+    .header {
+        display: none;
+    }
+}

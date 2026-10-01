@@ -46,6 +46,40 @@
     background-color: #41F6D7;
 }
 
+@mixin main-top-name {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    gap: 1rem;
+    padding-top: 30px;
+}
+
+@mixin main-top-name-line {
+    width: 4px;
+    height: 40px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: $infoLineC;
+}
+
+@mixin main-top-name-text {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    height: 40px;
+}
+
+@mixin main-top-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    gap: 0.5rem;
+    margin-right: 20px;
+    padding-top: 30px;
+}
+
 @mixin name-text {
     display: flex;
     align-items: center;
@@ -75,9 +109,18 @@
     border-radius: 6px;
 }
 
+@mixin reviews-text {
+    font-size: 16px;
+    color: $basicGray;
+    margin-left: 35px;
+    margin-bottom: 16px;
+}
+
 @mixin main-content-text {
     margin: 0 16px;
     font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
     color: $basicBlack;
 }
 
