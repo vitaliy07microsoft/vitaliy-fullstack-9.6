@@ -37,5 +37,29 @@ body {
     }
 }
 
-@media (min-width: 769px) and (max-width: 1119px) {}
+@media (min-width: 769px) and (max-width: 1119px) {
+    .header {
+        @include header;
+    }
+
+    .header__buttons--left {
+        @include header-buttons;
+    }
+
+    .header__buttons--betweenLine--left {
+        @include between-line;
+    }
+
+    .header__buttons--left--cps {
+        width: 96.55px;
+    }
+
+    .header__buttons--betweenLine--right {
+        @include between-line;
+    }
+
+    .header__buttons--right {
+        @include header-buttons;
+    }
+}
 @media (min-width: 1120px) {}

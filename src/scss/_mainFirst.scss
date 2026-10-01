@@ -85,5 +85,89 @@ body {
         @include main-content-hero-img;
     }
 }
-@media (min-width: 769px) and (max-width: 1119px) {}
+
+
+
+
+
+@media (min-width: 769px) and (max-width: 1119px) {
+    .block-between-line {
+        @include block-between-line;
+    }
+    
+    .main {
+        background-color: $basicBGC;
+    }
+
+    .main__top--right {
+        display: none;
+    }
+
+    .main__top--name {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 16px;
+        padding-top: 30px;
+    }
+
+    .main__top--name--line {
+        @include name-line-blue;
+    }
+
+    .main__top--name--text {
+        @include name-text;
+    }
+
+    .main__info {
+        display: flex;
+        align-items: center;
+        @include main-info;
+    }
+
+    .main__info--all {
+        @include main-info-all;
+    }
+
+    .main__info--checked {
+        // @include main-info-all;
+        @include main-info-checked;
+    }
+
+    .main__reviews {
+        display: none;
+    }
+
+    .main__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main__content--text {
+        @include main-content-text;
+    }
+
+    .main__content--text--second {
+        white-space: pre-line;
+    }
+    .main__content--text--second--comma {
+        display: none;
+    }
+
+    .main__content--text--third {
+        display: none;
+    }
+
+    .main__content--readMore {
+        @include main-content-readMore;
+    }
+
+    .main__content--readMore--font {
+        @include main-content-readMore-font;
+    }
+
+    .main__content--hero {
+        @include main-content-hero-img;
+    }
+}
 @media (min-width: 1120px) {}
