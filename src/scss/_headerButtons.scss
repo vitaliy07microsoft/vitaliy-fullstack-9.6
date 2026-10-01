@@ -1,0 +1,132 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+body {
+    background-color: $basicBGC;
+}
+
+@media (max-width: 768px) {
+    .header {
+        @include header;
+    }
+
+    .header__buttons--left {
+        @include header-buttons;
+    }
+
+    .header__buttons--betweenLine--left {
+        display: none;
+    }
+
+    .header__buttons--left--cps {
+        width: 96.55px;
+    }
+
+    .header__buttons--betweenLine--right {
+        @include between-line;
+    }
+
+    .header__buttons--right {
+        @include header-buttons;
+    }
+
+    .header__buttons--right--call,
+    .header__buttons--right--chat,
+    .header__buttons--right--profile {
+        display: none;
+    }
+
+    .main {
+        background-color: $basicBGC;
+    }
+
+    .main__top--right {
+        display: none;
+    }
+
+    .main__top--name {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 16px;
+        padding-top: 30px;
+    }
+
+    .main__top--name--line {
+        @include name-line-blue;
+    }
+
+    .main__top--name--text {
+        @include name-text;
+    }
+
+    .main__info {
+        display: flex;
+        align-items: center;
+        @include main-info;
+    }
+
+    .main__info--all {
+        @include main-info-all;
+    }
+
+    // #main__info--first,
+    // #main__info--fourth,
+    // #main__info--fifth,
+    // #main__info--sixth {
+    //     display: none;
+    // }
+
+    .main__info--checked {
+        // @include main-info-all;
+        @include main-info-checked;
+    }
+
+    .main__reviews {
+        display: none;
+    }
+
+    .main__content {
+        display: grid;
+    }
+
+    .main__content--text {
+        @include main-content-text;
+    }
+
+    .main__content--text--second,
+    .main__content--text--third {
+        display: none;
+    }
+
+    .main__content--readMore {
+        @include main-content-readMore;
+    }
+
+    .main__content--readMore--font {
+        @include main-content-readMore-font;
+    }
+
+    .main__content--img {
+        @include main-content-img;
+    }
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1119px) {
+
+}
+
+@media (min-width: 1120px) {
+
+}
+
+display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        white-space: nowrap;
+        padding: 0 1rem;
+        border: 2px;
+        cursor: pointer;

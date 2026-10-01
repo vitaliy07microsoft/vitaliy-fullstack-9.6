@@ -1,0 +1,106 @@
+@use "sass:color";
+@use "variables" as *;
+
+@mixin flex-center {
+    display: center;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 88px;
+    background-color: $white;
+    padding: 0px 16px;
+    box-sizing: border-box;
+}
+
+@mixin header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+@mixin between-line {
+    width: 2px;
+    height: 32px;
+    background-color: $eaC;
+    border-radius: 1px;
+}
+
+@mixin name-line-blue {
+    width: 4px;
+    height: 40px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: #41F6D7;
+}
+
+@mixin name-text {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    height: 40px;
+}
+
+@mixin main-info {
+    color: #7E7E82;
+    font-size: 16px;
+    margin: 16px;
+    gap: 2rem;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+@mixin main-info-all {
+    @include flex-center;
+    height: 40px;
+    white-space: nowrap;
+    padding: 0 1rem;
+    border: 2px;
+    cursor: pointer;
+}
+
+@mixin main-info-checked {
+    border: 2px solid #B8FFEC;
+    border-radius: 6px;
+}
+
+@mixin main-content-text {
+    margin: 0 16px;
+    font-size: 14px;
+    color: $basicBlack;
+}
+
+@mixin main-content-readMore {
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+@mixin main-content-readMore-font {
+    color: $basicBlack;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+@mixin main-content-img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+}
+
+@mixin swiper-slide-size {
+    width: 240px;
+    height: 72px;
+}
+@mixin swiper-slide-style {
+    @include flex-center;
+    @include swiper-slide-size;
+    border-radius: $border-radius;
+    background-color: $primary-swiperBG;
+    border: $primary-swiperBorder;
+}
+

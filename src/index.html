@@ -28,7 +28,7 @@
         
 
         <section class="header__buttons--right">
-            <img class="header__buttons--rightt--call" src="./img/call.svg" alt="img__call-icon">
+            <img class="header__buttons--right--call" src="./img/call.svg" alt="img__call-icon">
             <img class="header__buttons--right--chat" src="./img/chat.svg" alt="img__chat-icon">
             <img class="header__buttons--right--profile" src="./img/profile.svg" alt="img__profile-icon">
 
@@ -58,12 +58,16 @@
 
             <section class="main__info">
               <div id="main__info--first" class="main__info--all">Ремонтируемые бренды</div>
-              <div id="main__info--first" class="main__info--all">Ремонтируемые устройства</div>
-              <div id="main__info--first" class="main__info--all">Дополнительные услуги</div>
-              <div id="main__info--first" class="main__info--all">Цены на услуги</div>
-              <div id="main__info--first" class="main__info--all">Адреса сервисных центров</div>
-              <div id="main__info--first" class="main__info--all">Специальные цены</div>
+              <div id="main__info--second" class="main__info--all">Ремонтируемые устройства</div>
+              <div id="main__info--third" class="main__info--all">Дополнительные услуги</div>
+              <div id="main__info--fourth" class="main__info--all">Цены на услуги</div>
+              <div id="main__info--fifth" class="main__info--all">Адреса сервисных центров</div>
+              <div id="main__info--sixth" class="main__info--all">Специальные цены</div>
             </section>
+        </section>
+
+        <section class="main__reviews">
+          <div class="reviews__text">Отзывы</div>
         </section>
 
 
@@ -360,18 +364,76 @@
         <section class="aside__middle--type">
           <div class="aside__middle--type--line"></div>
 
-          <div class="aside__middle--type--text1"></div>
-          <div class="aside__middle--type--text2"></div>
-          <div class="aside__middle--type--text3"></div>
-          <div class="aside__middle--type--text4"></div>
-          <div class="aside__middle--type--text5"></div>
-          <div class="aside__middle--type--text6"></div>
-          <div class="aside__middle--type--text7"></div>
-          <div class="aside__middle--type--text8"></div>
+          <div class="aside__middle--type--text1">Ремонт техники</div>
+          <div class="aside__middle--type--text2">Услуги и сервисы</div>
+          <div class="aside__middle--type--text3">Корпоративным клиентам</div>
+          <div class="aside__middle--type--text4">Продавцам техники</div>
+          <div class="aside__middle--type--text5">Партнёрам</div>
+          <div class="aside__middle--type--text6">Производителям</div>
+          <div class="aside__middle--type--text7">Наши сервисные центры</div>
+          <div class="aside__middle--type--text8">Контакты</div>
         </section>
       </div>
 
-      <div class="aside"></div>
+      <div class="aside__bottom">
+        <section class="aside__bottom--buttons">
+          <img
+            src="./img/call.svg"
+            class="aside__bottom--buttons--call"
+            alt="call-img"
+          />
+          <img
+            src="./img/chat.svg"
+            class="aside__bottom--buttons--chat"
+            alt="chat-img"
+          />
+          <img
+            src="./img/profile.svg"
+            class="aside__bottom--buttons--profile"
+            alt="profile-img"
+          />
+        </section>
+
+
+        <section class="aside__bottom--info">
+          <div class="aside__bottom--info--mail">mail@cps.com</div>
+          <div class="aside__bottom--info--phone">8 800 890 8900</div>
+        </section>
+
+
+        <section class="aside__bottom--language--select">
+          <input
+            type="radio"
+            id="aside__bottom--language--select--ru"
+            name="language"
+            checked
+            hidden
+          />
+          <label for="aside__bottom--language--select--ru" class="aside__bottom--language"
+            >RU</label
+          >
+
+          <input
+            type="radio"
+            id="aside__bottom--language--select--en"
+            name="language"
+            hidden
+          />
+          <label for="aside__bottom--language--select--en" class="aside__bottom--language"
+            >EN</label
+          >
+
+          <input
+            type="radio"
+            id="aside__bottom--language--select--ch"
+            name="language"
+            hidden
+          />
+          <label for="aside__bottom--language--select--ch" class="aside__bottom--language"
+            >CH</label
+          >
+        </section>
+      </div>
     </aside>
 
 
