@@ -1,5 +1,17 @@
 @use "sass:color";
 
+@font-face {
+  font-family: "TT lakes";
+  src: url(../fonts/TTLakes-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "TT lakes", sans-serif;
+}
+
 // colors
 $white: #ffffff;
 $eaC: #eaeaea;
@@ -14,6 +26,7 @@ $textShadow: 0px 0px 5px rgb(150, 148, 148);
 $swiperPBC: #b8b7b7;
 $topGradient: linear-gradient(45deg, #f8f8f8, #ffffff);
 $topLineC: #d9fff5;
+$blockBottomLineC: #d9fff5;
 
 //fonts
 $base-font: "TT lakes", sans-serif;
@@ -40,8 +53,3 @@ $margin-2rem: 2rem;
     background-color: $primary-swiperBG;
     border: $primary-swiperBorder;
 }
-$
-$
-$
-$
-$
