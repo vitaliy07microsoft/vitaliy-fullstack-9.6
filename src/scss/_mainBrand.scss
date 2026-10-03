@@ -1,0 +1,231 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+body {
+    background-color: $basicBGC;
+}
+
+@media (max-width: 767px) {
+    .main__brands {
+        height: 80px;
+        background: linear-gradient(45deg, #f8f8f8, #ffffff);
+  }
+
+    .main__brands--top--line {
+        @include main-brands-top-line;
+  }
+
+    .main__brands--top--title {
+        @include main-brands-top-title;
+  }
+
+    .main__brands--swiper {
+        margin-left: 1rem;
+    }
+
+    .main__brands--swiper-wrapper {
+        gap: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .brands-swiper-slide {
+        @include brands-swiper-slide;
+    }
+
+    .brands-swiper-slide-img {
+        margin-left: 1rem;
+    }
+
+    .brands-swiper-slide-go {
+        margin-right: 1rem;
+    }
+
+    .brands-swiper-pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        position: absolute;
+        bottom: 0px;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: #b8b7b7;
+        width: 12px;
+        height: 12px;
+    }
+
+    .bottom {
+        display: none;
+    }
+}
+
+
+
+
+@media (min-width: 769px) and (max-width: 1119px) {
+    .main__brands {
+        height: 56px;
+        background: linear-gradient(45deg, #f8f8f8, #ffffff);
+  }
+
+    .main__brands--top--line {
+        @include main-brands-top-line;
+  }
+
+    .main__brands--top--title {
+        @include main-brands-top-title;
+  }
+
+    .main__brands--swiper {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .main__brands--swiper-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .brands-swiper-slide {
+        @include brands-swiper-slide;
+    }
+
+    //   .swiper-slide-hidden {
+    //     display: none;
+    // }
+
+    .brands-swiper-slide-img {
+        margin-left: 1rem;
+    }
+
+    .brands-swiper-slide-go {
+        margin-right: 1rem;
+    }
+
+   .main__brands--show--more {
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+   }
+
+   .main__brands--show--more--button {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+   }
+
+   .main__brands--show--more--button--img {
+        display: flex;
+   }
+
+     .rotate {
+        transform: rotate(180deg);
+   }
+
+   .main__brands--show--more--button--text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #f74403;
+        margin-left: 0.3rem;
+   }
+
+   .swiper-pagination {
+        display: none;
+  }
+}
+
+
+
+
+@media (min-width: 1120px) {
+    .main__brands {
+        height: 56px;
+        background: linear-gradient(45deg, #f8f8f8, #ffffff);
+  }
+
+    .main__brands--top--line {
+        @include main-brands-top-line;
+  }
+
+    .main__brands--top--title {
+        @include main-brands-top-title;
+  }
+
+    .main__brands--swiper {
+        max-width: 100%;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .main__brands--swiper-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        place-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .brands-swiper-slide {
+        @include brands-swiper-slide;
+    }
+
+    //   .swiper-slide-hidden {
+    //     display: none;
+    // }
+
+    .brands-swiper-slide-img {
+        margin-left: 1rem;
+    }
+
+    .brands-swiper-slide-go {
+        margin-right: 1rem;
+    }
+
+   .main__brands--show--more {
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+   }
+
+   .main__brands--show--more--button {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+   }
+
+   .main__brands--show--more--button--img {
+        display: flex;
+   }
+
+     .rotate {
+        transform: rotate(180deg);
+   }
+
+   .main__brands--show--more--button--text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #1b1c21;
+        margin-left: 0.3rem;
+   }
+
+   .swiper-pagination {
+        display: none;
+  }
+}
