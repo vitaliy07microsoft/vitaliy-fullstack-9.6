@@ -463,7 +463,7 @@ body {
     width: 12px;
     height: 12px;
   }
-  .main__brands--show--more {
+  .main__brands {
     display: none;
   }
 }
@@ -508,6 +508,9 @@ body {
     border-radius: 6px;
     background-color: #ffffff;
     border: 1px solid #eaeaea;
+  }
+  .brands-swiper-slide-hidden {
+    display: none;
   }
   .brands-swiper-slide-img {
     margin-left: 1rem;
@@ -588,6 +591,9 @@ body {
     border-radius: 6px;
     background-color: #ffffff;
     border: 1px solid #eaeaea;
+  }
+  .brands-swiper-slide-hidden {
+    display: none;
   }
   .brands-swiper-slide-img {
     margin-left: 1rem;

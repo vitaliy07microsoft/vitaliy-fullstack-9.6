@@ -96,9 +96,9 @@ body {
         @include brands-swiper-slide;
     }
 
-    //   .swiper-slide-hidden {
-    //     display: none;
-    // }
+    .brands-swiper-slide-hidden {
+        display: none;
+    }
 
     .brands-swiper-slide-img {
         margin-left: 1rem;
@@ -181,9 +181,9 @@ body {
         @include brands-swiper-slide;
     }
 
-    //   .swiper-slide-hidden {
-    //     display: none;
-    // }
+    .brands-swiper-slide-hidden {
+        display: none;
+    }
 
     .brands-swiper-slide-img {
         margin-left: 1rem;
