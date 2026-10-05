@@ -1,0 +1,214 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+body {
+    background-color: $basicBGC;
+}
+
+@media (max-width: 767px) {
+    .main__tech--top {
+        @include main-tech-top;
+    }
+
+    .main__tech--top--title {
+        @include main-tech-top-title;
+  }
+
+    .main__tech--swiper {
+        margin: 0 16px 24px 16px;
+    }
+
+    .main__tech--swiper-wrapper {
+        gap: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .tech-swiper-slide {
+        @include tech-swiper-slide;
+    }
+
+    .tech-swiper-slide-text {
+        @include main-tech-swiper-slide-text;
+    }
+
+    .tech-swiper-slide-go {
+        @include main-tech-swiper-slide-go;
+    }
+
+    .tech-swiper-pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        position: absolute;
+        bottom: 0px;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: #b8b7b7;
+        width: 12px;
+        height: 12px;
+    }
+
+    .main__tech--show--more {
+        display: none;
+    }
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1119px) {
+    .main__tech--top {
+        @include main-tech-top;
+    }
+
+    .main__tech--top--title {
+        @include main-tech-top-title;
+  }
+
+    .main__tech--swiper {
+        margin: 0 0 24px 16px;
+    }
+
+    .main__tech--swiper-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .tech-swiper-slide {
+        @include tech-swiper-slide;
+    }
+
+    .tech-swiper-slide-hidden {
+        display: none;
+    }
+
+    .tech-swiper-slide-text {
+        @include main-tech-swiper-slide-text;
+    }
+
+    .tech-swiper-slide-go {
+        @include main-tech-swiper-slide-go;
+    }
+
+   .main__tech--show--more {
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+   }
+
+   .main__tech--show--more--button {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+   }
+
+   .main__tech--show--more--button--img {
+        display: flex;
+   }
+
+    .rotate {
+        transform: rotate(180deg);
+   }
+
+   .main__tech--show--more--button--text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #1b1c21;
+        margin-left: 0.3rem;
+   }
+
+   .swiper-pagination {
+        display: none;
+  }
+}
+
+
+
+
+@media (min-width: 1120px) {
+    .main__tech--top {
+        @include main-tech-top;
+  }
+  
+    .main__tech--top--title {
+        @include main-tech-top-title;
+  }
+
+    .main__tech--swiper {
+        max-width: 100%;
+        margin: 0 16px 24px 16px;
+    }
+
+    .main__tech--swiper-wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        place-items: center;
+        gap: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .tech-swiper-slide {
+        @include tech-swiper-slide;
+    }
+
+    .tech-swiper-slide-hidden {
+        display: none;
+    }
+
+    .tech-swiper-slide-text {
+        @include main-tech-swiper-slide-text;
+    }
+
+    .tech-swiper-slide-go {
+        @include main-tech-swiper-slide-go;
+    }
+
+   .main__tech--show--more {
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+   }
+
+   .main__tech--show--more--button {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+   }
+
+   .main__tech--show--more--button--img {
+        display: flex;
+   }
+
+     .rotate {
+        transform: rotate(180deg);
+   }
+
+   .main__tech--show--more--button--text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        color: #1b1c21;
+        margin-left: 0.3rem;
+   }
+
+   .swiper-pagination {
+        display: none;
+  }
+}

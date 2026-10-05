@@ -142,12 +142,9 @@
     padding-bottom: 30px;
 }
 
-@mixin main-brands-top-line {
-    width: 100%;
-    height: 1px;
-    position: absolute;
-    top: 0px;
-    background-color: #d9fff5;
+@mixin main-brands-top {
+    height: 56px;
+    background: linear-gradient(45deg, #f8f8f8, #ffffff);
 }
 
 @mixin main-brands-top-title {
@@ -159,7 +156,7 @@
     color: #7e7e82;
 }
 
-@mixin swiper-slide-size {
+@mixin brands-swiper-slide-size {
     width: 240px;
     height: 72px;
 }
@@ -168,10 +165,70 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include swiper-slide-size;
+    @include brands-swiper-slide-size;
     border-radius: 6px;
     background-color: #ffffff;
     border: 1px solid #eaeaea;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@mixin main-tech-top {
+    height: 56px;
+    background: linear-gradient(45deg, #f8f8f8, #ffffff);
+}
+
+@mixin main-tech-top-title {
+    padding: 16px 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #7e7e82;
+}
+
+@mixin tech-swiper-slide-size {
+    width: 240px;
+    height: 160px;
+}
+
+@mixin tech-swiper-slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    @include tech-swiper-slide-size;
+    border-radius: 6px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+}
+
+@mixin main-tech-swiper-slide-text {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-family: "TT lakes", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    color: #1b1c21;
+}
+
+@mixin main-tech-swiper-slide-go {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
 }
 
 

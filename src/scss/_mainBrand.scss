@@ -6,13 +6,8 @@ body {
 }
 
 @media (max-width: 767px) {
-    .main__brands {
-        height: 80px;
-        background: linear-gradient(45deg, #f8f8f8, #ffffff);
-  }
-
-    .main__brands--top--line {
-        @include main-brands-top-line;
+    .main__brands--top {
+        @include main-brands-top;
   }
 
     .main__brands--top--title {
@@ -20,7 +15,7 @@ body {
   }
 
     .main__brands--swiper {
-        margin-left: 1rem;
+        margin: 0 16px 24px 16px;
     }
 
     .main__brands--swiper-wrapper {
@@ -65,13 +60,8 @@ body {
 
 
 @media (min-width: 768px) and (max-width: 1119px) {
-    .main__brands {
-        height: 56px;
-        background: linear-gradient(45deg, #f8f8f8, #ffffff);
-  }
-
-    .main__brands--top--line {
-        @include main-brands-top-line;
+    .main__brands--top {
+        @include main-brands-top;
   }
 
     .main__brands--top--title {
@@ -79,8 +69,7 @@ body {
   }
 
     .main__brands--swiper {
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin: 0 16px 24px 16px;
     }
 
     .main__brands--swiper-wrapper {
@@ -149,13 +138,8 @@ body {
 
 
 @media (min-width: 1120px) {
-    .main__brands {
-        height: 56px;
-        background: linear-gradient(45deg, #f8f8f8, #ffffff);
-  }
-
-    .main__brands--top--line {
-        @include main-brands-top-line;
+    .main__brands--top {
+        @include main-brands-top;
   }
 
     .main__brands--top--title {
@@ -164,8 +148,7 @@ body {
 
     .main__brands--swiper {
         max-width: 100%;
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin: 0 16px 24px 16px;
     }
 
     .main__brands--swiper-wrapper {
