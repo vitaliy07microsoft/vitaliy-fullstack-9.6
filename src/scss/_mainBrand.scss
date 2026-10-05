@@ -64,7 +64,7 @@ body {
 
 
 
-@media (min-width: 769px) and (max-width: 1119px) {
+@media (min-width: 768px) and (max-width: 1119px) {
     .main__brands {
         height: 56px;
         background: linear-gradient(45deg, #f8f8f8, #ffffff);
@@ -127,7 +127,7 @@ body {
         display: flex;
    }
 
-     .rotate {
+    .rotate {
         transform: rotate(180deg);
    }
 
