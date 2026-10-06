@@ -416,7 +416,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: -0.2px;
+    letter-spacing: 0.2px;
     color: #7e7e82;
   }
   .main__brands--swiper {
@@ -470,7 +470,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: -0.2px;
+    letter-spacing: 0.2px;
     color: #7e7e82;
   }
   .main__brands--swiper {
@@ -544,7 +544,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: -0.2px;
+    letter-spacing: 0.2px;
     color: #7e7e82;
   }
   .main__brands--swiper {
@@ -623,7 +623,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: -0.2px;
+    letter-spacing: 0.2px;
     color: #7e7e82;
   }
   .main__tech--swiper {
@@ -653,7 +653,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: -0.2px;
+    letter-spacing: 0.2px;
     color: #1b1c21;
   }
   .tech-swiper-slide-go {
@@ -688,7 +688,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: -0.2px;
+    letter-spacing: 0.2px;
     color: #7e7e82;
   }
   .main__tech--swiper {
@@ -724,7 +724,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: -0.2px;
+    letter-spacing: 0.2px;
     color: #1b1c21;
   }
   .tech-swiper-slide-go {
@@ -773,7 +773,7 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: -0.2px;
+    letter-spacing: 0.2px;
     color: #7e7e82;
   }
   .main__tech--swiper {
@@ -810,7 +810,7 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: -0.2px;
+    letter-spacing: 0.2px;
     color: #1b1c21;
   }
   .tech-swiper-slide-go {
@@ -847,6 +847,179 @@ body {
   }
   .swiper-pagination {
     display: none;
+  }
+}
+body {
+  background-color: #f8f8f8;
+}
+
+@media (max-width: 767px) {
+  .main__price--top {
+    height: 56px;
+    background: linear-gradient(45deg, #f8f8f8, #ffffff);
+  }
+  .main__price--top--title {
+    padding: 16px 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #7e7e82;
+  }
+  .hidden-small {
+    display: none;
+  }
+  .main__price--swiper {
+    margin: 0 16px 24px 16px;
+  }
+  .main__price--swiper-wrapper {
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  .price-swiper-slide {
+    position: relative;
+    display: flex;
+    position: relative;
+    width: 260px;
+    height: 200px;
+    border-radius: 6px;
+    background-color: #ffffff;
+  }
+  .price-swiper-slide-title {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    font-family: "TT lakes", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: #7e7e82;
+  }
+  .price-swiper-slide-title-text {
+    position: absolute;
+    left: 16px;
+    top: 36px;
+    font-family: "TT lakes", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: #1b1c21;
+  }
+  .price-swiper-slide-price {
+    position: absolute;
+    left: 16px;
+    top: 88px;
+    font-family: "TT lakes", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: #7e7e82;
+  }
+  .price-swiper-slide-price-text {
+    position: absolute;
+    left: 16px;
+    top: 108px;
+    font-family: "TT lakes", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: #1b1c21;
+  }
+  .price-swiper-slide-deadline {
+    position: absolute;
+    left: 16px;
+    top: 142px;
+    font-family: "TT lakes", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: #7e7e82;
+  }
+  .price-swiper-slide-deadline-text {
+    position: absolute;
+    left: 16px;
+    top: 162px;
+    font-family: "TT lakes", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: #1b1c21;
+  }
+  .price-swiper-slide-button {
+    position: absolute;
+    top: 152px;
+    left: 125px;
+  }
+  .price-swiper-slide-button-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 119px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #ff3e79;
+  }
+  .price-swiper-slide-button-text {
+    position: absolute;
+    left: 12px;
+    font-family: "TT lakes", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+    color: #ffffff;
+  }
+  .price-swiper-slide-button-img {
+    position: absolute;
+    right: 16px;
+    bottom: 11px;
+  }
+  .price-swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    position: absolute;
+    bottom: 0px;
+  }
+  .swiper-pagination-bullet {
+    background-color: #b8b7b7;
+    width: 12px;
+    height: 12px;
+  }
+  .main__price--explanation--text {
+    font-family: "TT lakes", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #1b1c21;
+    margin: 0 16px 24px 16px;
+    text-align: left;
+  }
+  .main__price--explanation--button {
+    margin: 0 16px 24px 16px;
+    border: none;
+    background-color: #f8f8f8;
+  }
+  .main__price--explanation--button--text {
+    font-family: "TT lakes", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #1b1c21;
+    text-align: left;
+  }
+  .main__price--explanation--button--img {
+    margin-left: 8px;
   }
 }
 
