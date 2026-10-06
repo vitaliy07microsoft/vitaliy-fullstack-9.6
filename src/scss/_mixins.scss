@@ -142,6 +142,12 @@
     padding-bottom: 30px;
 }
 
+
+
+
+
+
+
 @mixin main-brands-top {
     height: 56px;
     background: linear-gradient(45deg, #f8f8f8, #ffffff);
@@ -152,7 +158,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: -0.2px;
+    letter-spacing: 0.2px;
     color: #7e7e82;
 }
 
@@ -193,7 +199,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: -0.2px;
+    letter-spacing: 0.2px;
     color: #7e7e82;
 }
 
@@ -221,7 +227,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    letter-spacing: -0.2px;
+    letter-spacing: 0.2px;
     color: #1b1c21;
 }
 
@@ -232,3 +238,118 @@
 }
 
 
+
+
+
+
+
+
+@mixin main-price-top {
+    height: 56px;
+    background: linear-gradient(45deg, #f8f8f8, #ffffff);
+}
+
+@mixin main-price-top-title {
+    padding: 16px 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #7e7e82;
+}
+
+@mixin price-swiper-slide-small-size {
+    width: 260px;
+    height: 200px;
+}
+
+@mixin price-swiper-slide-small {
+    display: flex;
+    position: relative;
+    @include price-swiper-slide-small-size;
+    border-radius: 6px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+}
+
+@mixin price-swiper-slide-medium-large-size {
+    width: 240px;
+    height: 160px;
+}
+
+@mixin price-swiper-slide-medium-large {
+    display: flex;
+    position: relative;
+    @include price-swiper-slide-medium-large-size;
+    border-radius: 6px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+}
+
+@mixin main-price-title {
+    font-family: "TT lakes", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: #7e7e82;
+}
+@mixin main-price-price {
+    font-family: "TT lakes", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: #1b1c21;
+}
+@mixin main-price-deadline {
+    font-family: "TT lakes", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: #7e7e82;
+}
+
+@mixin main-price-swiper-slide-text {
+    font-family: "TT lakes", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: #1b1c21;
+}
+
+@mixin price-swiper-slide-button {
+    width: 119px;
+    height: 32px;
+    border-radius: 16px;
+    color: #ff3e79;
+}
+
+@mixin price-swiper-slide-button-text {
+    font-family: "TT lakes", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+    color: #ff3e79;
+}
+
+@mixin main-price-explanation-text {
+    font-family: "TT lakes", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #1b1c21;
+}
+
+@mixin main-price-explanation-button-text {
+    font-family: "TT lakes", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #1b1c21;
+}
