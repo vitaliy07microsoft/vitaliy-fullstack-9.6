@@ -258,6 +258,15 @@
     color: #7e7e82;
 }
 
+@mixin main-price-top-titles-text {
+    font-family: "TT lakes", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: #7e7e82;
+}
+
 @mixin price-swiper-slide-small-size {
     width: 260px;
     height: 200px;
@@ -324,6 +333,7 @@
     width: 119px;
     height: 32px;
     border-radius: 16px;
+    margin-right: 16px;
     background-color: #ff3e79;
 }
 
@@ -343,6 +353,7 @@
     line-height: 20px;
     letter-spacing: 0.2px;
     color: #1b1c21;
+    width: 420px;
 }
 
 @mixin main-price-explanation-button-text {
