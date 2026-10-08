@@ -1,8 +1,8 @@
-@use "variables" as *;
+@use "variables";
 @use "mixins" as *;
 
 body {
-    background-color: $basicBGC;
+    background-color: variables.$basicBGC;
 }
 
 @media (max-width: 767px) {
@@ -11,7 +11,7 @@ body {
     }
     
     .main {
-        background-color: $basicBGC;
+        background-color: variables.$basicBGC;
     }
 
     .main__top--right {
@@ -96,7 +96,7 @@ body {
     }
     
     .main {
-        background-color: $basicBGC;
+        background-color: variables.$basicBGC;
     }
 
     .main__top--right {
@@ -171,8 +171,12 @@ body {
     }
 }
 @media (min-width: 1120px) {
+    .block-between-line {
+        @include block-between-line;
+    }
+    
     .main {
-        background-color: $basicBGC;
+        background-color: variables.$basicBGC;
     }
 
     .main__top {

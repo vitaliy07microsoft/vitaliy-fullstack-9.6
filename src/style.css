@@ -507,6 +507,7 @@ body {
     display: flex;
     align-items: center;
     margin-left: 1rem;
+    margin-bottom: 32px;
   }
   .main__brands--show--more--button {
     display: flex;
@@ -582,6 +583,7 @@ body {
     display: flex;
     align-items: center;
     margin-left: 1rem;
+    margin-bottom: 50px;
   }
   .main__brands--show--more--button {
     display: flex;
@@ -736,6 +738,7 @@ body {
     display: flex;
     align-items: center;
     margin-left: 1rem;
+    margin-bottom: 32px;
   }
   .main__tech--show--more--button {
     display: flex;
@@ -822,6 +825,7 @@ body {
     display: flex;
     align-items: center;
     margin-left: 1rem;
+    margin-bottom: 50px;
   }
   .main__tech--show--more--button {
     display: flex;

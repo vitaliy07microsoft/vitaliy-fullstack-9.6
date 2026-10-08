@@ -1,8 +1,8 @@
-@use "variables" as *;
+@use "variables";
 @use "mixins" as *;
 
 body {
-    background-color: $basicBGC;
+    background-color: variables.$basicBGC;
 }
 
 @media (max-width: 767px) {
@@ -101,6 +101,7 @@ body {
         display: flex;
         align-items: center;
         margin-left: 1rem;
+        margin-bottom: 32px;
    }
 
    .main__tech--show--more--button {
@@ -180,6 +181,7 @@ body {
         display: flex;
         align-items: center;
         margin-left: 1rem;
+        margin-bottom: 50px;
    }
 
    .main__tech--show--more--button {

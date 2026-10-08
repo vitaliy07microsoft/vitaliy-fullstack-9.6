@@ -30,7 +30,8 @@ module.exports = {
           options: {
             presets: ['@babel/preset-env'],
           }
-        }
+        },
+        type: 'javascript/auto'
       },
 
       // Компилируем SCSS в CSS
@@ -40,7 +41,19 @@ module.exports = {
           MiniCssExtractPlugin.loader, // Extract css to separate file
           'css-loader', // translates CSS into CommonJS
           'postcss-loader', // parse CSS and add vendor prefixes to CSS rules
-          'sass-loader', // compiles Sass to CSS, using Node Sass by default
+          {
+            loader: 'sass-loader',
+            options: {
+              // Включает быстрый и современный интерфейс для старых версий sass-loader
+              api: 'modern', 
+              sassOptions: {
+                // Включает современный интерфейс для новых версий sass-loader (v16+)
+                api: 'modern', 
+                // Намертво глушит предупреждение legacy JS API, если оно все еще проскакивает
+                silenceDeprecations: ['legacy-js-api'] 
+              }
+            }
+          },
         ],
       },
 

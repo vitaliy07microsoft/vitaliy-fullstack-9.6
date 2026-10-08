@@ -1,6 +1,5 @@
-import '../scss/style.scss'
+import "../scss/style.scss";
 
-// brands
 const brandsSwiper = new Swiper(".main__brands--swiper", {
   width: 240,
   pagination: {
@@ -17,7 +16,6 @@ brandsMediaQuery.addEventListener("change", (e) => {
   }
 });
 
-//tech
 const techSwiper = new Swiper(".main__tech--swiper", {
   width: 240,
   pagination: {
@@ -34,7 +32,6 @@ techMediaQuery.addEventListener("change", (e) => {
   }
 });
 
-//price
 const priceSwiper = new Swiper(".main__price--swiper", {
   width: 240,
   pagination: {
