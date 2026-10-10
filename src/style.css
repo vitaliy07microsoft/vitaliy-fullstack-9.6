@@ -20,7 +20,7 @@ body {
     justify-content: space-between;
     width: 100%;
     height: 88px;
-    background-color: #ffffff;
+    background-color: white;
     padding: 1rem;
     box-sizing: border-box;
   }
@@ -34,6 +34,7 @@ body {
   }
   .header__buttons--left--cps {
     width: 96.55px;
+    margin-right: 1rem;
   }
   .header__buttons--betweenLine--right {
     width: 2px;
@@ -59,7 +60,7 @@ body {
     justify-content: space-between;
     width: 100%;
     height: 88px;
-    background-color: #ffffff;
+    background-color: white;
     padding: 1rem;
     box-sizing: border-box;
   }
@@ -76,6 +77,7 @@ body {
   }
   .header__buttons--left--cps {
     width: 96.55px;
+    margin-right: 1rem;
   }
   .header__buttons--betweenLine--right {
     width: 2px;
@@ -281,6 +283,11 @@ body {
   }
 }
 @media (min-width: 1120px) {
+  .block-between-line {
+    width: 100%;
+    height: 1px;
+    background-color: #d9fff5;
+  }
   .main {
     background-color: #f8f8f8;
   }
@@ -1011,7 +1018,7 @@ body {
     text-align: left;
   }
   .main__price--explanation--button {
-    margin: 0 16px 24px 16px;
+    margin: 0 16px 50px 16px;
     border: none;
     background-color: #f8f8f8;
   }
@@ -1289,7 +1296,7 @@ body {
     text-align: left;
   }
   .main__price--explanation--button {
-    margin: 0 16px 24px 16px;
+    margin: 0 16px 50px 16px;
     border: none;
     background-color: #f8f8f8;
   }
@@ -1304,6 +1311,330 @@ body {
   }
   .main__price--explanation--button--img {
     margin-left: 8px;
+  }
+}
+@media (min-width: 1120px) {
+  .main__price--top {
+    height: 56px;
+    background: linear-gradient(45deg, #f8f8f8, #ffffff);
+  }
+  .main__price--top--title {
+    padding: 16px 24px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #7e7e82;
+  }
+  .main__price--top--titles {
+    height: 63px;
+    margin: 0 16px 0 16px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    align-items: center;
+  }
+  .main__price--top--titles--text {
+    font-family: "TT lakes", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: #7e7e82;
+  }
+  .main__price--top--titles--type {
+    padding-left: 16px;
+  }
+  .hidden-medium-large {
+    display: none;
+  }
+  .main__price--swiper {
+    margin: 0 0 24px 0;
+  }
+  .main__price--swiper-wrapper {
+    height: auto;
+    width: auto;
+    margin: 0 16px 0 16px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    display: grid;
+    grid-template-rows: repeat(5, 64px);
+    place-items: center;
+  }
+  .price-swiper-slide {
+    position: relative;
+    display: flex;
+    position: relative;
+    border-radius: 6px;
+    background-color: #ffffff;
+    border: none;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    align-items: center;
+  }
+  .price-swiper-slide-betweenLine {
+    position: absolute;
+    bottom: 0px;
+    left: 16px;
+    right: 16px;
+    height: 1px;
+    background-color: #eaeaea;
+    z-index: 1001;
+  }
+  #price-swiper-slide-1 {
+    grid-row: 1/2;
+  }
+  #price-swiper-slide-title-1 {
+    grid-column: 1/2;
+    position: absolute;
+    bottom: 96px;
+    font-family: "TT lakes", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: #7e7e82;
+  }
+  #price-swiper-slide-title-text-1 {
+    grid-column: 1/2;
+  }
+  #price-swiper-slide-price-text-1 {
+    grid-column: 2/3;
+  }
+  #price-swiper-slide-deadline-text-1 {
+    grid-column: 3/4;
+  }
+  #price-swiper-slide-button-1 {
+    grid-column: 4/5;
+  }
+  #price-swiper-slide-2 {
+    grid-row: 2/3;
+  }
+  #price-swiper-slide-title-text-2 {
+    grid-column: 1/2;
+  }
+  #price-swiper-slide-price-text-2 {
+    grid-column: 2/3;
+  }
+  #price-swiper-slide-deadline-text-2 {
+    grid-column: 3/4;
+  }
+  #price-swiper-slide-button-2 {
+    grid-column: 4/5;
+  }
+  #price-swiper-slide-3 {
+    grid-row: 3/4;
+  }
+  #price-swiper-slide-title-text-3 {
+    grid-column: 1/2;
+  }
+  #price-swiper-slide-price-text-3 {
+    grid-column: 2/3;
+  }
+  #price-swiper-slide-deadline-text-3 {
+    grid-column: 3/4;
+  }
+  #price-swiper-slide-button-3 {
+    grid-column: 4/5;
+  }
+  #price-swiper-slide-4 {
+    grid-row: 4/5;
+  }
+  #price-swiper-slide-title-text-4 {
+    grid-column: 1/2;
+  }
+  #price-swiper-slide-price-text-4 {
+    grid-column: 2/3;
+  }
+  #price-swiper-slide-deadline-text-4 {
+    grid-column: 3/4;
+  }
+  #price-swiper-slide-button-4 {
+    grid-column: 4/5;
+  }
+  #price-swiper-slide-5 {
+    grid-row: 5/6;
+  }
+  #price-swiper-slide-title-text-5 {
+    grid-column: 1/2;
+  }
+  #price-swiper-slide-price-text-5 {
+    grid-column: 2/3;
+  }
+  #price-swiper-slide-deadline-text-5 {
+    grid-column: 3/4;
+  }
+  #price-swiper-slide-button-5 {
+    grid-column: 4/5;
+  }
+  .price-swiper-slide-title {
+    position: absolute;
+    font-family: "TT lakes", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: #7e7e82;
+  }
+  .price-swiper-slide-title-text {
+    padding-left: 16px;
+    position: absolute;
+    font-family: "TT lakes", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: #1b1c21;
+  }
+  .price-swiper-slide-price {
+    position: absolute;
+    font-family: "TT lakes", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: #7e7e82;
+  }
+  .price-swiper-slide-price-text {
+    position: absolute;
+    font-family: "TT lakes", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: #1b1c21;
+  }
+  .price-swiper-slide-deadline {
+    position: absolute;
+    font-family: "TT lakes", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    color: #7e7e82;
+  }
+  .price-swiper-slide-deadline-text {
+    position: absolute;
+    font-family: "TT lakes", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: #1b1c21;
+  }
+  .price-swiper-slide-button {
+    position: absolute;
+  }
+  .price-swiper-slide-button-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 119px;
+    height: 32px;
+    border-radius: 16px;
+    margin-right: 16px;
+    background-color: #ff3e79;
+  }
+  .price-swiper-slide-button-text {
+    position: absolute;
+    left: 12px;
+    font-family: "TT lakes", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: -0.15px;
+    color: #ffffff;
+  }
+  .price-swiper-slide-button-img {
+    position: absolute;
+    right: 16px;
+    bottom: 11px;
+  }
+  .price-swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    position: absolute;
+    bottom: 0px;
+  }
+  .swiper-pagination-bullet {
+    background-color: #b8b7b7;
+    width: 12px;
+    height: 12px;
+  }
+  .main__price--explanation--text {
+    font-family: "TT lakes", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #1b1c21;
+    width: 420px;
+    margin: 0 16px 24px 16px;
+    text-align: left;
+  }
+  .main__price--explanation--button {
+    margin: 0 16px 50px 16px;
+    border: none;
+    background-color: #f8f8f8;
+  }
+  .main__price--explanation--button--text {
+    font-family: "TT lakes", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #1b1c21;
+    text-align: left;
+  }
+  .main__price--explanation--button--img {
+    margin-left: 8px;
+  }
+}
+@media (max-width: 767px) {
+  .aside-hidden {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1119px) {
+  .aside-hidden {
+    display: none;
+  }
+  body {
+    display: flex;
+    width: 100%;
+  }
+  .aside {
+    flex: 0 0 320px;
+    width: 320px;
+  }
+  .all-content {
+    flex: 1;
+    min-width: 0;
+    width: 0;
+  }
+  .main {
+    width: 100%;
+    min-width: 0;
+  }
+}
+@media (min-width: 1120px) {
+  body {
+    display: flex;
+    width: 100%;
+  }
+  .aside {
+    flex: 0 0 305px;
+    width: 320px;
+  }
+  .all-content {
+    flex: 1;
+    min-width: 0;
+    width: 0;
+  }
+  .main {
+    width: 100%;
+    min-width: 0;
   }
 }
 

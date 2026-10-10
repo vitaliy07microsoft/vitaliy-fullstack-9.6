@@ -1,0 +1,67 @@
+@use "variables";
+@use "mixins" as *;
+
+@media (max-width: 767px) {
+    .aside-hidden {
+        display: none;
+    }
+}
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1119px) {
+    .aside-hidden {
+    display: none;
+    }
+
+    body {
+    display: flex;
+    width: 100%;
+  }
+
+  .aside {
+    flex: 0 0 320px;
+    width: 320px;
+  }
+
+  .all-content {
+    flex: 1;
+    min-width: 0;
+    width: 0;
+  }
+
+  .main {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+
+
+
+
+
+@media (min-width: 1120px) {
+  body {
+    display: flex;
+    width: 100%;
+  }
+
+  .aside {
+    flex: 0 0 305px;
+    width: 320px;
+  }
+
+  .all-content {
+    flex: 1;
+    min-width: 0;
+    width: 0;
+  }
+
+  .main {
+    width: 100%;
+    min-width: 0;
+  }
+}
