@@ -364,3 +364,20 @@
     letter-spacing: 0.2px;
     color: #1b1c21;
 }
+
+
+
+
+
+
+
+
+
+@mixin footer-text {
+    font-family: "TT lakes", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #7e7e82;
+}

@@ -1,12 +1,10 @@
-const autoprefixer = require("autoprefixer");
-
 let priceSwiper;
 
 function togglePriceSwiper() {
   if (window.innerWidth <= 767) {
     if (!priceSwiper) {
       priceSwiper = new Swiper(".main__price--swiper", {
-        width: autoprefixer,
+        width: 260,
         pagination: {
           el: ".price-swiper-pagination",
           clickable: true,

@@ -1,0 +1,95 @@
+@use "variables";
+@use "mixins" as *;
+
+@media (max-width: 767px) {
+    .footer__text {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__text--first--text,
+    .footer__text--second--text,
+    .footer__text--third--text {
+        @include footer-text;
+        margin-top: 1rem;
+    }
+
+    .footer__text--first--text {
+        width: 218px;
+    }
+
+    .footer__text--third--text {
+        margin-bottom: 1rem;
+        width: 312px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1119px) {
+    .footer__text {
+        margin: 2rem 0 2rem 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .footer__text--first--text,
+    .footer__text--second--text,
+    .footer__text--third--text {
+        @include footer-text;
+    }
+
+    .footer__text--first--text {
+        text-align: left;
+        margin-left: 24px;
+        width: 218px;
+    }
+
+    .footer__text--second--text {
+        text-align: center;
+        width: 214px;
+    }
+
+    .footer__text--third--text {
+        text-align: right;
+        margin-right: 24px;
+        width: 330px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .footer__text {
+        margin: 2rem 0 2rem 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+
+    .footer__text--first--text,
+    .footer__text--second--text,
+    .footer__text--third--text {
+        @include footer-text;
+    }
+
+    .footer__text--first--text {
+        text-align: left;
+        margin-left: 24px;
+        width: 218px;
+    }
+
+    .footer__text--second--text {
+        text-align: center;
+        width: 214px;
+    }
+
+    .footer__text--third--text {
+        text-align: right;
+        margin-right: 24px;
+        width: 330px;
+    }
+}
