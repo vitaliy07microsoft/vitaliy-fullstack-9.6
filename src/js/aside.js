@@ -1,8 +1,12 @@
-const line = document.querySelector(".aside__middle--type--line");
-const items = document.querySelectorAll(".aside__middle--type");
+const asideOpenCloseButton = document.getElementById("aside__top--left--buttons--burger--id");
 
-items.forEach((item) => {
-  item.addEventListener("click", () => {
-    line.style.top = `${item.offsetTop}px`;
-  });
+const asideOpenButtonImgSrc = "../img/burger.svg";
+const asideCloseButtonImgSrc = "../img/burgerClose.svg";
+
+asideOpenCloseButton.addEventListener("click", function () {
+  if (asideOpenCloseButton.getAttribute("src") === asideOpenButtonImgSrc) {
+    asideOpenCloseButton.src = asideCloseButtonImgSrc;
+  } else {
+    asideOpenCloseButton.src = asideOpenButtonImgSrc;
+  }
 });

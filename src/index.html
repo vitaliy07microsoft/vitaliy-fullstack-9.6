@@ -17,12 +17,13 @@
 
 
 <body class="body">
-  <aside class="aside aside-hidden">
-
+  <aside class="aside" id="aside-hidden">
+    <section class="aside__body">
       <div class="aside__top">
         <section class="aside__top--left--buttons">
           <img src="./img/burgerClose.svg"
           class="aside__top--left--buttons--burger"
+          id="aside__top--left--buttons--burger--id"
           alt="burger-img">
 
           <img src="./img/Group.svg"
@@ -37,51 +38,51 @@
         </section>
       </div>
 
-      <div class="aside__middle">
+      <section class="aside__middle">
         <div class="aside__middle--type--line"></div>
         
         <section class="aside__middle--type">
-          <label class="aside__middle--type--text1">
+          <label class="aside__middle--type--text1 aside__middle--type--text">
             <input type="radio" name="aside-type" checked>
             Ремонт техники
           </label>
 
-          <label class="aside__middle--type--text2">
+          <label class="aside__middle--type--text2 aside__middle--type--text">
             <input type="radio" name="aside-type">
             Услуги и сервисы
           </label>
 
-          <label class="aside__middle--type--text3">
+          <label class="aside__middle--type--text3 aside__middle--type--text">
             <input type="radio" name="aside-type">
             Корпоративным клиентам
           </label>
 
-          <label class="aside__middle--type--text4">
+          <label class="aside__middle--type--text4 aside__middle--type--text">
             <input type="radio" name="aside-type">
             Продавцам техники
           </label>
 
-          <label class="aside__middle--type--text5">
+          <label class="aside__middle--type--text5 aside__middle--type--text">
             <input type="radio" name="aside-type">
             Партнёрам
           </label>
 
-          <label class="aside__middle--type--text6">
+          <label class="aside__middle--type--text6 aside__middle--type--text">
             <input type="radio" name="aside-type">
             Производителям
           </label>
 
-          <label class="aside__middle--type--text7">
+          <label class="aside__middle--type--text7 aside__middle--type--text">
             <input type="radio" name="aside-type">
             Наши сервисные центры
           </label>
 
-          <label class="aside__middle--type--text8">
+          <label class="aside__middle--type--text8 aside__middle--type--text">
             <input type="radio" name="aside-type">
             Контакты
           </label>
         </section>
-      </div>
+      </section>
 
       <div class="aside__bottom">
         <section class="aside__bottom--buttons">
@@ -142,12 +143,15 @@
           >
         </section>
       </div>
-    </aside>
+    </section>
+
+    <div class="aside__body--right"></div>
+  </aside>
 
 
 
 
-    <!-- <div class="all-content">
+    <div class="all-content">
       <header class="header">
         <section class="header__buttons--left">
             <img class="header__buttons--left--burger" src="./img/burger.svg"  alt="img__burger--icon"/>
@@ -186,12 +190,35 @@
 
 
             <section class="main__info">
-              <div id="main__info--first" class="main__info--all main__info--checked">Ремонтируемые бренды</div>
-              <div id="main__info--second" class="main__info--all">Ремонтируемые устройства</div>
-              <div id="main__info--third" class="main__info--all">Дополнительные услуги</div>
-              <div id="main__info--fourth" class="main__info--all">Цены на услуги</div>
-              <div id="main__info--fifth" class="main__info--all">Адреса сервисных центров</div>
-              <div id="main__info--sixth" class="main__info--all">Специальные цены</div>
+              <label class="main__info--all">
+              <input type="radio" name="main-info" id="main__info--first" checked>
+                <span>Ремонтируемые бренды</span>
+              </label>
+              
+              <label class="main__info--all">
+                <input type="radio" name="main-info" id="main__info--second">
+                <span>Ремонтируемые устройства</span>
+              </label>
+              
+              <label class="main__info--all">
+                <input type="radio" name="main-info" id="main__info--third">
+                <span>Дополнительные услуги</span>
+              </label>
+              
+              <label class="main__info--all">
+                <input type="radio" name="main-info" id="main__info--fourth">
+                <span>Цены на услуги</span>
+              </label>
+              
+              <label class="main__info--all">
+                <input type="radio" name="main-info" id="main__info--fifth">
+                <span>Адреса сервисных центров</span>
+              </label>
+              
+              <label class="main__info--all">
+                <input type="radio" name="main-info" id="main__info--sixth">
+                <span>Специальные цены</span>
+              </label>
             </section>
 
           <section class="main__reviews">
@@ -561,7 +588,7 @@
         </section> 
 
       </footer>
-    </div> -->
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script type="module" src="./js/index.js"></script>

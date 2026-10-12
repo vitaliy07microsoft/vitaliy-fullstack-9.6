@@ -5,6 +5,17 @@ body {
     background-color: variables.$basicBGC;
 }
 
+.main__info input[type='radio'] {
+    display: none;
+}
+
+.main__info label:has(input:checked) {
+    background-color: #ffffff;
+    border: 2px solid #b8ffec;
+    border-radius: 6px;
+}
+
+
 @media (max-width: 767px) {
     .block-between-line {
         @include block-between-line;
