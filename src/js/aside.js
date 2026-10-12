@@ -1,12 +1,15 @@
-const asideOpenCloseButton = document.getElementById("aside__top--left--buttons--burger--id");
+const aside = document.querySelector(".aside");
+const asideOpener = document.getElementById("asideOpener");
+const asideCloser = document.getElementById("asideCloser");
 
-const asideOpenButtonImgSrc = "../img/burger.svg";
-const asideCloseButtonImgSrc = "../img/burgerClose.svg";
+console.log(aside);
+console.log(asideOpener);
+console.log(asideCloser);
 
-asideOpenCloseButton.addEventListener("click", function () {
-  if (asideOpenCloseButton.getAttribute("src") === asideOpenButtonImgSrc) {
-    asideOpenCloseButton.src = asideCloseButtonImgSrc;
-  } else {
-    asideOpenCloseButton.src = asideOpenButtonImgSrc;
-  }
+asideOpener.addEventListener("click", function () {
+  aside.removeAttribute("id");
+});
+
+asideCloser.addEventListener("click", function() {
+  aside.id = "aside-hidden";
 });
