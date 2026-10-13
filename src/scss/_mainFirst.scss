@@ -44,6 +44,10 @@ body {
     cursor: pointer;
 }
 
+.main__content--text--hidden {
+    display: none;
+}
+
 @media (max-width: 767px) {
     .block-between-line {
         @include block-between-line;
@@ -108,10 +112,10 @@ body {
         @include main-content-text;
     }
 
-    .main__content--text--second,
-    .main__content--text--third {
-        display: none;
-    }
+    // .main__content--text--second,
+    // .main__content--text--third {
+    //     display: none;
+    // }
 
     .main__content--readMore {
         @include main-content-readMore;
@@ -194,9 +198,9 @@ body {
         display: none;
     }
 
-    .main__content--text--third {
-        display: none;
-    }
+    // .main__content--text--third {
+    //     display: none;
+    // }
 
     .main__content--readMore {
         @include main-content-readMore;
@@ -210,6 +214,7 @@ body {
         @include main-content-hero-img;
     }
 }
+
 @media (min-width: 1120px) {
     .block-between-line {
         @include block-between-line;

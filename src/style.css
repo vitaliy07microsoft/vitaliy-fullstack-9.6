@@ -139,6 +139,10 @@ body {
   cursor: pointer;
 }
 
+.main__content--text--hidden {
+  display: none;
+}
+
 @media (max-width: 767px) {
   .block-between-line {
     width: 100%;
@@ -207,10 +211,6 @@ body {
     line-height: 20px;
     letter-spacing: 0.2px;
     color: #1B1C21;
-  }
-  .main__content--text--second,
-  .main__content--text--third {
-    display: none;
   }
   .main__content--readMore {
     display: flex;
@@ -301,9 +301,6 @@ body {
     white-space: pre-line;
   }
   .main__content--text--second--comma {
-    display: none;
-  }
-  .main__content--text--third {
     display: none;
   }
   .main__content--readMore {

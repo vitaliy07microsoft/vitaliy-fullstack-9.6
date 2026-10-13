@@ -1,15 +1,22 @@
-const aside = document.querySelector(".aside");
-const asideOpener = document.getElementById("asideOpener");
-const asideCloser = document.getElementById("asideCloser");
+const contentTextSecond = document.querySelector('.main__content--text--second')
+const contentTextThird = document.querySelector('.main__content--text--third')
+const contentTextOpenCloser = document.querySelector('.main__content--readMore')
+const contentTextOpenCloserImg = document.querySelector(
+  '.main__content--readMore--img'
+)
+const contentTextOpenCloserFont = document.querySelector(
+  '.main__content--readMore--font'
+)
 
-console.log(aside);
-console.log(asideOpener);
-console.log(asideCloser);
+contentTextOpenCloser.addEventListener('click', () => {
+  contentTextSecond.classList.toggle('main__content--text--hidden')
+  contentTextThird.classList.toggle('main__content--text--hidden')
 
-asideOpener.addEventListener("click", function () {
-  aside.removeAttribute("id");
-});
-
-asideCloser.addEventListener("click", function() {
-  aside.id = "aside-hidden";
-});
+  if (contentTextThird.classList.contains('main__content--text--hidden')) {
+    contentTextOpenCloserFont.textContent = 'Читать всё'
+    contentTextOpenCloserImg.style.transform = 'rotate(0deg)'
+  } else {
+    contentTextOpenCloserFont.textContent = 'Скрыть'
+    contentTextOpenCloserImg.style.transform = 'rotate(180deg)'
+  }
+})
