@@ -1,4 +1,3 @@
-// brands
 const brandsSwiper = new Swiper(".main__brands--swiper", {
   width: 240,
   pagination: {

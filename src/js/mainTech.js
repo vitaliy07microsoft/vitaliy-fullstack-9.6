@@ -1,4 +1,3 @@
-// brands
 const techSwiper = new Swiper(".main__tech--swiper", {
   width: 240,
   pagination: {

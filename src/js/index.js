@@ -1,4 +1,9 @@
 import "../scss/style.scss";
+import "./aside";
+import "./mainBrands";
+import "./mainFirst";
+import "./mainPrices";
+import "./mainTech";
 
 const brandsSwiper = new Swiper(".main__brands--swiper", {
   width: 240,
