@@ -1,22 +1,12 @@
 let priceSwiper;
 
-const priceSwiperSlide1 = document.getElementById("price-swiper-slide-1");
-priceSwiperSlide1.style.width = "100%";
-const priceSwiperSlide2 = document.getElementById("price-swiper-slide-1");
-priceSwiperSlide2.style.width = "100%";
-const priceSwiperSlide3 = document.getElementById("price-swiper-slide-1");
-priceSwiperSlide3.style.width = "100%";
-const priceSwiperSlide4= document.getElementById("price-swiper-slide-1");
-priceSwiperSlide4.style.width = "100%";
-const priceSwiperSlide5 = document.getElementById("price-swiper-slide-1");
-priceSwiperSlide5.style.width = "100%";
-
+const priceMediaQuery = window.matchMedia("(max-width: 767px)");
 
 function togglePriceSwiper() {
-  if (window.innerWidth <= 767) {
+  if (priceMediaQuery.matches) {
     if (!priceSwiper) {
       priceSwiper = new Swiper(".main__price--swiper", {
-        width: 260,
+        slidesPerView: "auto",
         pagination: {
           el: ".price-swiper-pagination",
           clickable: true,
@@ -30,7 +20,3 @@ function togglePriceSwiper() {
     }
   }
 }
-
-togglePriceSwiper();
-
-window.addEventListener("resize", togglePriceSwiper);

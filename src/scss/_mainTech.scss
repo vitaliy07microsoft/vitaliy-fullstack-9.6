@@ -5,6 +5,10 @@ body {
     background-color: variables.$basicBGC;
 }
 
+.main__tech--swiper--slide {
+    width: 240px;
+}
+
 @media (max-width: 767px) {
     .main__tech--top {
         @include main-tech-top;

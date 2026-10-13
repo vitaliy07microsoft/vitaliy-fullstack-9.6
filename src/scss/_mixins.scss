@@ -280,16 +280,9 @@
     background-color: #ffffff;
 }
 
-@mixin price-swiper-slide-medium-large-size {
-    // width: 100%;
-    // height: 160px;
-    // margin: 24px 24px 24px 24px;
-}
-
 @mixin price-swiper-slide-medium-large {
     display: flex;
     position: relative;
-    @include price-swiper-slide-medium-large-size;
     border-radius: 6px;
     background-color: #ffffff;
     border: none;

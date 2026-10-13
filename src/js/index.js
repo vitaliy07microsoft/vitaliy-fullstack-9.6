@@ -38,7 +38,7 @@ techMediaQuery.addEventListener("change", (e) => {
 });
 
 const priceSwiper = new Swiper(".main__price--swiper", {
-  width: 240,
+  slidesPerView: "auto",
   pagination: {
     el: ".price-swiper-pagination",
     clickable: true,
