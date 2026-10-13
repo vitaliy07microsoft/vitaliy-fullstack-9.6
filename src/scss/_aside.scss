@@ -1,6 +1,7 @@
 @use 'variables';
 @use 'mixins' as *;
 
+
 @media (max-width: 767px) {
   #aside-hidden {
       display: none;
@@ -97,8 +98,7 @@
     font-size: 16px;
     color: #1b1c21;
     cursor: pointer;
-    transition:
-      transform 0.3s ease-out;
+    transition: transform 0.3s ease-out;
   }
 
   .aside__middle--type--text1:hover,
@@ -118,6 +118,9 @@
 
   .aside__middle--type label:has(input:checked) {
     color: #7e7e82;
+    border-left: 4px solid #41f6d7;
+    margin-left: -20px;
+    padding-left: 16px;
   }
 
   .aside__bottom {
@@ -172,6 +175,10 @@
 
   .aside__bottom--language {
     color: #1b1c21;
+  }
+
+  .aside__bottom--language:hover {
+    cursor: pointer;
   }
 
   .aside__bottom--language--select input:checked + .aside__bottom--language {
@@ -264,6 +271,7 @@
   .aside__bottom--buttons--chat,
   .aside__bottom--buttons--profile {
     transition: all 0.2s ease-out;
+    cursor: pointer;
   }
 
   .aside__top--left--buttons--burger:hover,
@@ -314,7 +322,7 @@
     color: #1b1c21;
     cursor: pointer;
     transition:
-      transform 0.3s ease-out;
+    transform 0.3s ease-out;
   }
 
   .aside__middle--type--text1:hover,
@@ -326,6 +334,7 @@
   .aside__middle--type--text7:hover,
   .aside__middle--type--text8:hover {
     transform: translateX(7px);
+    border-left: 4px solid #41f6d7;
   }
 
   .aside__middle input[type='radio'] {
@@ -334,6 +343,9 @@
 
   .aside__middle--type label:has(input:checked) {
     color: #7e7e82;
+    border-left: 4px solid #41f6d7;
+    margin-left: -20px;
+    padding-left: 16px;
   }
 
   .aside__bottom {
@@ -388,6 +400,10 @@
 
   .aside__bottom--language {
     color: #1b1c21;
+  }
+
+  .aside__bottom--language:hover {
+    cursor: pointer;
   }
 
   .aside__bottom--language--select input:checked + .aside__bottom--language {
@@ -533,6 +549,9 @@
 
   .aside__middle--type label:has(input:checked) {
     color: #7e7e82;
+    border-left: 4px solid #41f6d7;
+    margin-left: -20px;
+    padding-left: 16px;
   }
 
   .aside__bottom {
@@ -587,6 +606,10 @@
 
   .aside__bottom--language {
     color: #1b1c21;
+  }
+
+  .aside__bottom--language:hover {
+    cursor: pointer;
   }
 
   .aside__bottom--language--select input:checked + .aside__bottom--language {

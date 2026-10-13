@@ -21,8 +21,11 @@ body {
 .header__buttons--right--chat,
 .header__buttons--right--profile,
 .header__buttons--right--repair,
-.header__buttons--right--checkstatus {
+.header__buttons--right--checkstatus,
+.main__top--right--button--repair,
+.main__top--right--button--checkstatus {
       transition: all 0.2s ease-out;
+      cursor: pointer;
 }
 
 .header__buttons--left--burger:hover,
@@ -31,8 +34,14 @@ body {
 .header__buttons--right--chat:hover,
 .header__buttons--right--profile:hover,
 .header__buttons--right--repair:hover,
-.header__buttons--right--checkstatus:hover {
+.header__buttons--right--checkstatus:hover,
+.main__top--right--button--repair:hover,
+.main__top--right--button--checkstatus:hover {
     transform: scale(110%);
+}
+
+.main__content--readMore {
+    cursor: pointer;
 }
 
 @media (max-width: 767px) {
@@ -67,6 +76,7 @@ body {
     .main__info {
         display: flex;
         align-items: center;
+        overflow-x: auto;
         @include main-info;
     }
 
